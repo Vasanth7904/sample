@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume – M. Vasanth</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #ddd; font-family: Arial, sans-serif; padding: 20px; }
+    .resume { display: flex; max-width: 1000px; margin: auto; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+
+    .left {
+      width: 33%;
+      background: #e6e6e6;
+      padding: 30px 20px;
+    }
+    .photo-space { 
+      height: 150px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .photo-space img {
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+    }
+    .left h1 {
+      font-size: 28px;
+      text-align: center;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    .left h2 {
+      font-size: 16px;
+      text-align: center;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .left a, .left p {
+      display: block;
+      font-size: 13px;
+      color: #333;
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-size: 13px;
+      font-weight: bold;
+      color: #444;
+      margin: 25px 0 10px;
+      border-bottom: 1px solid #999;
+      padding-bottom: 3px;
+    }
+    .left ul { list-style: none; padding-left: 0; }
+    .left ul li { font-size: 13px; color: #333; margin-bottom: 6px; }
+
+    .right { width: 67%; padding: 30px 20px; }
+    .box { background: #f2f2f2; border: 1px solid #ccc; padding: 20px; margin-bottom: 25px; }
+    .box h3 { font-size: 14px; color: #333; margin-bottom: 10px; border-bottom: 1px solid #999; padding-bottom: 5px; }
+    .box ul { list-style: disc inside; padding-left: 15px; }
+    .box ul li { margin-bottom: 8px; font-size: 13px; color: #333; }
+    .box p { font-size: 13px; color: #333; margin-bottom: 10px; line-height: 1.4; }
+
+    /* Print-specific styles for A4 */
+    @page {
+      size: A4;
+      margin: 0;
+    }
+    @media print {
+      body {
+        background: none;
+        -webkit-print-color-adjust: exact;
+      }
+      .resume {
+        width: 210mm;
+        height: 297mm;
+        box-shadow: none;
+        margin: 0;
+        display: flex;
+      }
+      .left, .right {
+        padding: 20px;
+      }
+      .box {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume">
+
+    <!-- LEFT PANEL -->
+    <div class="left">
+      <div class="photo-space">
+        <!-- Add your photo here -->
+        <!-- Example: <img src="vasanth-photo.jpg" alt="M. Vasanth Photo"> -->
+      </div>
+      
+      <h1>M. VASANTH</h1>
+      <h2>Electronics Graduate</h2>
+
+      <!-- Contact -->
+      <a href="mailto:vasanth31012004@gmail.com">vasanth31012004@gmail.com</a>
+      <a href="tel:+917904879354">+91-7904879354</a>
+      <a href="https://www.linkedin.com/in/vasanth-m-1a806025b" target="_blank">linkedin.com/in/vasanth-m</a>
+      <p>27 Samankuthu,<br>Kunnathur, Tiruppur,<br>TN 638103</p>
+
+      <!-- Education -->
+      <div class="section-title">Education</div>
+      <p><strong>B.E. ECE, KSRIET</strong><br>2022 – 2025 | CGPA: 6.9</p>
+      <p><strong>Diploma ECE, Govt Polytechnic College, Coimbatore</strong><br>2019 – 2022 | 84%</p>
+      <p><strong>SSLC, NRKN High School, Kunnathur</strong><br>2019 | 76%</p>
+
+      <!-- Skills -->
+      <div class="section-title">Skills</div>
+      <ul>
+        <li>SQL – Comfortable with writing SQL queries and performing basic data manipulation.</li>
+        <li>Git, GitHub – Basic understanding of Git commands</li>
+      </ul>
+
+      <!-- Languages -->
+      <div class="section-title">Languages</div>
+      <ul>
+        <li>Tamil</li>
+        <li>English</li>
+      </ul>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right">
+
+      <!-- About Me -->
+      <div class="box">
+        <h3>About Me</h3>
+        <ul>
+          <li>Self-motivated Electronics Graduate with a keen interest in data analysis.</li>
+          <li>Seeking an opportunity in an entry-level position where I can apply my knowledge of SQL.</li>
+          <li>Eager to grow in a data-driven environment and contribute to meaningful projects.</li>
+          <li>Focused on continuously developing technical and problem-solving skills.</li>
+        </ul>
+      </div>
+
+      <!-- Experience -->
+      <div class="box">
+        <h3>Experience</h3>
+        <p><strong>Intern, SELKON (Automation Solutions for Smart Irrigation), Erode</strong><br>June 2023 – July 2023</p>
+        <ul>
+          <li>Assembled and soldered electronic components for irrigation control systems.</li>
+          <li>Validated hardware connectivity and ensured functional quality.</li>
+        </ul>
+      </div>
+
+      <!-- Projects -->
+      <div class="box">
+        <h3>Projects</h3>
+        <p><strong>IoT-based Edge Computing Framework for Industry 4.0</strong><br>
+          • Integrated Blockchain for secure data handling and Deep Learning for intelligent analytics.<br>
+          • Enabled real-time data processing at the edge, improved efficiency, ensured data integrity, and supported predictive maintenance in smart industrial environments.</p>
+        <p><strong>Automatic Car Parking System</strong><br>
+          • Contributed through documentation, editing, research, component selection, and supporting assembly.</p>
+      </div>
+
+      <!-- Tools & Certifications -->
+      <div class="box">
+        <h3>Certifications</h3>
+        <ul>
+          <li>SQL (Basic) – HackerRank</li>
+          <li>Introduction to Networking – NVIDIA</li>
+          <li>Networking & Security – Cisco</li>
+          <li>Introduction to Generative AI</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
