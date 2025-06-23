@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume – M. Vasanth</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #ddd; font-family: Arial, sans-serif; padding: 20px; }
+    .resume { display: flex; max-width: 1000px; margin: auto; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+
+    /* Left panel */
+    .left {
+      width: 33%;
+      background: #e6e6e6;
+      padding: 30px 20px;
+    }
+    .photo-space { 
+      height: 150px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .left h1 {
+      font-size: 32px; /* Reduced size */
+      font-family: 'Georgia', serif;
+      text-align: center;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    .left h2 {
+      font-size: 16px;
+      text-align: center;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .left a, .left p {
+      display: block;
+      font-size: 13px;
+      color: #333;
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-size: 13px;
+      font-weight: bold;
+      color: #444;
+      margin: 25px 0 10px;
+      border-bottom: 1px solid #999;
+      padding-bottom: 3px;
+    }
+    .left ul { list-style: none; padding-left: 0; }
+    .left ul li { font-size: 13px; color: #333; margin-bottom: 6px; }
+
+    /* Right panel */
+    .right { width: 67%; padding: 30px 20px; }
+    .box { background: #f2f2f2; border: 1px solid #ccc; padding: 20px; margin-bottom: 20px; }
+    .box h3 { font-size: 14px; color: #333; margin-bottom: 10px; border-bottom: 1px solid #999; padding-bottom: 5px; }
+    .box ul { list-style: disc inside; padding-left: 15px; }
+    .box ul li { margin-bottom: 8px; font-size: 13px; color: #333; }
+    .box p { font-size: 13px; color: #333; margin-bottom: 10px; line-height: 1.4; }
+    .box ul li a { color: #000; text-decoration: none; }
+
+    /* Print-specific styles for A4 */
+    @page {
+      size: A4;
+      margin: 0;
+    }
+    @media print {
+      body {
+        background: none;
+        -webkit-print-color-adjust: exact;
+      }
+      .resume {
+        width: 210mm;
+        height: 297mm;
+        box-shadow: none;
+        margin: 0;
+        display: flex;
+      }
+      .left {
+        padding: 15px;
+      }
+      .right {
+        padding: 15px;
+      }
+      .box {
+        margin-bottom: 15px;
+        page-break-inside: avoid;
+      }
+      /* Ensure Certifications stay on the same page if space permits */
+      .box:last-of-type {
+        page-break-after: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume">
+
+    <!-- LEFT PANEL -->
+    <div class="left">
+      <div class="photo-space">
+        <!-- Add your photo here -->
+      </div>
+      
+      <h1>M. VASANTH</h1>
+      <h2>Electronics Graduate</h2>
+
+      <!-- Contact -->
+      <a href="mailto:vasanth31012004@gmail.com">vasanth31012004@gmail.com</a>
+      <a href="tel:+917904879354">+91-7904879354</a>
+      <a href="https://www.linkedin.com/in/vasanth-m-1a806025b" target="_blank">linkedin.com/in/vasanth-m-1a806025b</a>
+      <p>Samankuthu, Power Office,<br>Kunnathur, Tiruppur - 638103,<br>Tamil Nadu, India</p>
+
+      <!-- Education -->
+      <div class="section-title">Education</div>
+      <p><strong>B.E. Electronics and Communication Engineering, KSRIET</strong><br>2022 – 2025 | CGPA: 7.1</p>
+      <p><strong>Diploma in ECE, Government Polytechnic College, Coimbatore</strong><br>2019 – 2022 | 84%</p>
+      <p><strong>SSLC, N R K N Government Higher Secondary School, Kunnathur</strong><br>2019 | 75.2%</p>
+
+      <!-- Skills -->
+      <div class="section-title">Skills</div>
+      <ul>
+        <li>Phase, Neutral, and Earthing understanding</li>
+        <li>Electrical Wiring & Installation</li>
+        <li>Basic Troubleshooting & Maintenance</li>
+        <li>Electrical Tools Handling</li>
+        <li>Networking & Security (Basic)</li>
+      </ul>
+
+      <!-- Languages -->
+      <div class="section-title">Languages</div>
+      <ul>
+        <li>Tamil</li>
+        <li>English</li>
+      </ul>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right">
+
+      <!-- About Me -->
+      <div class="box">
+        <h3>About Me</h3>
+        <ul>
+          <li>Electronics and Communication graduate with hands-on experience in electrical wiring, SDB installation, and maintenance work.</li>
+          <li>Understanding of PLC, SCADA systems, and basic industrial communication protocols.</li>
+          <li>Open to flexible work hours and willing to start with a modest salary to gain real-time industry exposure.</li>
+          <li>Quick learner with a strong interest in automation and instrumentation, eager to grow in an industrial environment.</li>
+        </ul>
+      </div>
+
+      <!-- Experience -->
+      <div class="box">
+        <h3>Experience</h3>
+        <p><strong>Intern, SELKON (Smart Irrigation Automation), Erode</strong><br>June 2023 – July 2023</p>
+        <ul>
+          <li>Assembled electronic components by placing and soldering them for correct connectivity.</li>
+          <li>Ensured functionality through testing and quality checks.</li>
+        </ul>
+        <p><strong>Part-Time Assistant (Electrical Wiring & Maintenance), Tiruppur</strong></p>
+        <ul>
+          <li>Hands-on experience in electrical wiring and maintenance for houses and garment factories (Premier Knits Pvt Ltd, Green India Pvt Ltd).</li>
+          <li>Installed switches, fans, alarms, appliances, and assisted in Sub Distribution Board (SDB) installations with a solid understanding of phase, neutral, and safety practices.</li>
+        </ul>
+      </div>
+
+      <!-- Projects -->
+      <div class="box">
+        <h3>Projects</h3>
+        <p><strong>IoT-Based Edge Framework for Industry 4.0</strong></p>
+        <ul>
+           <li>Reduced latency by processing data locally on edge devices, ensuring faster response times and minimal network dependency.</li>
+          <li>Integrated deep learning models to improve the accuracy of fault prediction and anomaly detection.</li>
+          <li>Leveraged Ethereum-based blockchain to securely log sensor data and model outputs, ensuring tamper-proof records and data integrity across the network.</li>
+        </ul>
+        <p><strong>Automatic Car Parking System</strong></p>
+        <ul>
+          <li>Selected and integrated components including Arduino Uno, IR sensors, infrared sensors, and stepper motors for automated vehicle detection and slot management.</li>
+          <li>Handled project documentation, supported hardware assembly, and performed testing to validate sensor accuracy and motor coordination.</li>
+        </ul>
+      </div>
+
+      <!-- Certifications -->
+      <div class="box">
+        <h3>Certifications</h3>
+        <ul>
+          <li><a href="https://www.coursera.org/account/accomplishments/verify/G4ZDQLQDY7GZ" target="_blank">Electrical Power Generation: An Industrial Outlook – L&T EduTech (Coursera)</a></li>
+          <li><a href="https://www.coursera.org/account/accomplishments/verify/LV44CHFQ4JVV" target="_blank">Networking & Security – Cisco</a></li>
+          <li><a href="https://www.coursera.org/account/accomplishments/verify/7VTF4FHJ3PLC" target="_blank">Introduction to Networking – NVIDIA</a></li>
+          <li><a href="https://www.hackerrank.com/certificates/35a5af53c36d" target="_blank">SQL (Basic) – HackerRank</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
